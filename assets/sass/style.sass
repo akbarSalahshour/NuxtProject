@@ -1,0 +1,61 @@
+
+@import 'variables.sass'
+@import 'mixin.sass'
+
+//----------------------HEADER-------------------------
+
+#navbar
+  position: sticky
+  width: 100%
+  z-index: 99
+  top: 0
+  padding: 3px
+  background-color: $darkColor
+  border-bottom: 1px solid $grayColor
+  box-shadow: 0 1px 4px $grayColor
+  & > div
+    width: 100%
+    max-width: 1200px
+    display: flex
+    margin: auto
+.navbar-logo
+  height: 50px
+.header-icon
+  @include align_center
+  & i
+    color: $lightGreenColor
+    transition: .2s ease-out
+  &:hover i
+    color: $darkGreenColor
+
+//----------------------FOOTER---------------------------
+
+#footer_container
+  padding:
+    top: 10px
+    bottom: 10px
+  height: 50px
+  width: 100%
+  text-align: center
+
+    //-----------------------PUBLIC----------------------------
+
+body
+  direction: rtl
+  background-color: $lightColor
+.container
+  max-width: 100%
+  padding: 0  
+  & > div
+    width: 100%
+    margin: auto
+    max-width: 1140px
+    background-color: #fff
+    padding: 10px
+    border: 1px solid $lightColor
+  .dropdwon-box
+    border: 1px solid $lightColor
+    border-radius: 3px
+    text-align: right
+  .custom-input
+    @include custom_input(#777,#fff,#dee2e6)
